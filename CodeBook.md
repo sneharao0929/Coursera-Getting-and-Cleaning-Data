@@ -53,11 +53,13 @@ x.training  , y.training  , subject.train is merged to get traing dataset , simi
 x.test  , y.test  , subject.test is merged to get test dataset.
 Both training and test data sets are merged to get a single dataset.
 
-**column names assigned **
+**column names assigned**
+
 New column names Subject and ActId is assigned to merged data set and then it is 
 filtered to get mean, median , subject and activity id
 
 **Use a descriptive activity names**
+
 The  column from activity.labels are named as  ActId, Activity is added which is 
 used to merge the filtered data and activity details
 
@@ -74,7 +76,9 @@ Tidy data set is created with following rules
 
 *******************************************************************************************************************************************************
 
-### wrote the tidy data in cleandata.txt
+### Output
+
+The final output of run_anlysis. R is created in cleandata.txt
 
 
 
