@@ -15,15 +15,17 @@ space limit is 80 characters
 ### Raw Data Sets
 The following raw data sets were  provided with the assignments 
 
-*features.txt              
-*activity_labels.txt             
-*X_train.txt              
-*Y_train.txt              
-*subject_train.txt               
-*X_test.txt             
-*Y_test.txt              
-*subject_test.txt             
+* features.txt              
+* activity_labels.txt             
+* X_train.txt              
+* Y_train.txt              
+* subject_train.txt               
+* X_test.txt             
+* Y_test.txt              
+* subject_test.txt             
 
+
+****************************************************************************************************************************************************
 ### The variables used 
 
 variableName       | Type       |    Source
@@ -43,27 +45,34 @@ features.labels    |Character   | created new columns subject and ACTId in featu
 filtered.data      |Dataframe   | oneset
 clean.data         |Dataframe   | filtered.data
 ********************************************************************************************************************************************************
-# Data Transformation
-********************************************************************************************************************************************************
-## Merged training and test data sets
-# x.training  , y.training  , subject.train is merged to get traing dataset , similarly
-# x.test  , y.test  , subject.test is merged to get test dataset.
-# Both training and test data sets are merged to get a single dataset.
+### Data Transformation
 
-##column names assigned to merged data set and then it is  filtered to get 
-#mean, median , subject and activity id
+**Merged training and test data sets**
 
-## Use a descriptive activity names
-# The new id column is added to activity.labels.txt which is used to merge the filtered data and activity column
+x.training  , y.training  , subject.train is merged to get traing dataset , similarly
+x.test  , y.test  , subject.test is merged to get test dataset.
+Both training and test data sets are merged to get a single dataset.
+
+**column names assigned **
+New column names Subject and ActId is assigned to merged data set and then it is 
+filtered to get mean, median , subject and activity id
+
+**Use a descriptive activity names**
+The  column from activity.labels are named as  ActId, Activity is added which is 
+used to merge the filtered data and activity details
 
 *******************************************************************************************************************************************************
-# Tidy data set
+### Tidy data set
+
+Tidy data set is created with following rules
+
+* Appropriately labels the data set
+* Removed paranthesis
+* Replaced mean with Mean
+* Replaced std with Std
+* Replaced - with nospace
+
 *******************************************************************************************************************************************************
-##Appropriately labels the data set
-### Removed paranthesis
-### Replaced mean with Mean
-### Replaced std with Std
-### Replaced - with nospace
 
 ### wrote the tidy data in cleandata.txt
 
