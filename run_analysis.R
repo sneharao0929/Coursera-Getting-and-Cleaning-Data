@@ -1,9 +1,12 @@
+library(plyr)
+
+
 path <- "C:\\coursera\\GettingAndCleaningData\\assignement\\getdata_projectfiles_UCI HAR Dataset\\UCI HAR Dataset"
 
 features <-  paste(path, "\\features.txt", sep = "")
 features <- read.table(features,colClasses = c("character"))
 dim(features) #561 2
-str(features)
+
 
 activity.labels <-  paste(path, "\\activity_labels.txt", sep = "")
 activity.labels <- read.table(activity.labels,  col.names = c("ActId", "Activity"))
@@ -54,11 +57,9 @@ dim(oneset) ##10299,563
 ###################
 ### 2. Extract only the mean and standard deviation for each measuremet
 ###################
-library(plyr)
-str(oneset)
+
 features.labels <-  rbind(rbind(features, c(562, "Subject")), c(563, "ActId"))[,2]
 names(oneset) <- features.labels
-head(oneset,2)
 
 filtered.data <- oneset[,grepl("*mean*|*std*|Subject|ActId", names(oneset))]
 dim(filtered.data) ##10299 81
@@ -67,7 +68,6 @@ dim(filtered.data) ##10299 81
 ### 3. Use a descriptive activity names to the name the acitvity in the data set
 #################
 filtered.data  <- join(filtered.data, activity.labels, by = "ActId")
-head(filtered.data)
 dim(filtered.data )
 
 ###############
@@ -86,7 +86,7 @@ dim(filtered.data)
 ###   with the average of each variable for each activity and each subject.
 #############
 clean.data  = ddply(filtered.data, c("Subject","Activity"), numcolwise(mean))
-write.table(clean.data,"cleandata.txt",row.name=FALSE ,sep = '\t')
+write.table(clean.data,"C:\\coursera\\GettingAndCleaningData\\assignement\\cleandata.txt",row.name=FALSE ,sep = '\t')
 
 
 
