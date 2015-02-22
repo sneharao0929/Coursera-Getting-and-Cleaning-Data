@@ -1,6 +1,6 @@
-# Codebook For Coursera Getting and Cleaning Data Project.  
-## Original Data source
-###Human Activity Recognition Using Smartphones Data Set 
+## Codebook For Coursera Getting and Cleaning Data Project.  
+### Original Data source
+Human Activity Recognition Using Smartphones Data Set 
 ***************************************************************************************************************************************************
 ## Test data source
 ###The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer tion signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
