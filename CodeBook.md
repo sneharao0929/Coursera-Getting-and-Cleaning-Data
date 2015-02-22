@@ -2,27 +2,27 @@
 ### Original Data source
 Human Activity Recognition Using Smartphones Data Set 
 ***************************************************************************************************************************************************
-## Test data source
-###The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer tion signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+### Test data source
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer tion signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 ****************************************************************************************************************************************************
-## Conventions followed
-### Processing code and dataset variable naming follows the conventions described in Google R Styde Guide
-### variable names are in format variable.name
-### All lowercase
-### space limit is 80 characters
+### Conventions followed
+Processing code and dataset variable naming follows the conventions described in Google R Styde Guide
+variable names are in format variable.name
+All lowercase
+space limit is 80 characters
 
 ****************************************************************************************************************************************************
-## Raw Data Sets
-### The following raw data sets were  provided with the assignments 
+### Raw Data Sets
+The following raw data sets were  provided with the assignments 
 
-*features.txt
-*activity_labels.txt
-*X_train.txt
-*Y_train.txt
-*subject_train.txt
-*X_test.txt
-*Y_test.txt
-*subject_test.txt
+*features.txt              
+*activity_labels.txt             
+*X_train.txt              
+*Y_train.txt              
+*subject_train.txt               
+*X_test.txt             
+*Y_test.txt              
+*subject_test.txt             
 
 ### The variables used 
 
