@@ -16,11 +16,11 @@
 
 ### Codebook 
 
-**The code books contains the details**
+**The code books contains following details**
 
-1.Raw data set
-2.Variables with their types
-3.Data transformation
+1. Raw data set
+2. Variables with their types
+3. Data transformation
 
 ***************************************************************************************************************************************************
 
